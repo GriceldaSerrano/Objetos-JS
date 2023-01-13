@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Objetos javaScript</h1>
+    <script>
+        let a =new String("Hola");
+        //console.log(a)
+
+        const b ={}
+        console.log(b);
+
+        const c =new Object();
+        console.log(c);
+        /*Dentro d eun objetoa las variables  se 
+         le van a llamar atributos/ propiedades y a
+         las funciones se les llama metodos*/
+        const Gris = {
+            nombre:"Gricelda",
+            apellido:"Serrano",
+            edad:28,
+            pasatiempos:["caminar","comer","bailar"],
+            soltero:false,
+            contacto:{
+                email:"gris@gmail.com",
+                twitter:"@graysi",
+                movil:"63256523"
+            },
+            saludar:function(){
+                console.log(`hola:)`)
+                
+            },
+            decirMiNombre:function(){
+                console.log(`hola me llamo ${this.nombre} ${this.apellido}
+                y tengo ${this.edad} años y me puede seguir
+                como ${this.contacto.twitter}en twitter..`)
+            }
+        }
+        console.log(Gris);
+        console.log(Gris["nombre"]);
+        console.log(Gris["apellido"]);
+        console.log(Gris.nombre);
+        console.log(Gris.edad);
+        console.log(Gris.soltero);
+        console.log(Gris.pasatiempos);
+        console.log(Gris.pasatiempos[1]);
+        console.log(Gris.contacto.twitter);
+        Gris.saludar();
+        Gris.decirMiNombre();
+
+        console.log(Object.keys(Gris));
+        console.log(Object.values(Gris));
+        console.log(Gris.hasOwnPoperty("nombre"));
+        console.log(Gris.hasOwnPoperty("nacimiento"));
+        
+
+
+ombre
+
+    </script>
+</body>
+</html>
